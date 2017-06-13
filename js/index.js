@@ -46,7 +46,7 @@ function onLocationFound(e) {
 }
 
 $("document").ready(() => {
-    var osm = L.tileLayer('https://{s}.tile.openstreemap.org/{z}/{x}/{y}.png', {
+    var osm = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }); 
 
