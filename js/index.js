@@ -1,5 +1,5 @@
 var map;
-target = [41.667714, -93.746740]
+target = [42.029549, -93.652079]
 
 function getDistance(coord1, coord2)
 {
