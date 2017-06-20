@@ -1,4 +1,4 @@
-gardens = [
+var gardens = [
     {
         Name: "Ames Farmer's Market",
         GardenInfo:"Contact Bob",

@@ -35,41 +35,59 @@ function getDistance(coord1, coord2)
     return distance
 }
 
-function onLocationFound(e) {
-    //getDistance([personMarker._latlng.lat, personMarker._latlng.lng], [ltlng.lat, ltlng.lng]);
-    var dist = getDistance([e.latlng.lat, e.latlng.lng], target) 
-    if(dist < 0.01)
+function onLocationFound(e)
+{
+    for (g in gardens)
     {
-        window.alert(dist + " miles away!");
+        var dist = getDistance([e.latlng.lat, e.latlng.lng], gardens[g].Latlng) 
+        if(dist < 0.01)
+        {
+            window.alert(gardens[g].Name);
+            break;
+        }
     }
 
 }
 
-$("document").ready(() => {
-    var osm = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+$("document").ready(() =>
+{
+    var osm = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', 
+    {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }); 
 
-    map =  L.map('map', {
+    map =  L.map('map',
+    {
        center: [41.577, -93.231], 
         zoom: 7,
         layers: [osm]
     });
 
-    baseLayers = {
-        "Open Street Map": osm
-    };
-
-    var marker = L.marker(target).addTo(map);
+    baseLayers = {"Open Street Map": osm};
+    for (var g in gardens)
+    {
+        var m= L.marker(gardens[g].Latlng).addTo(map);
+    }
 
     L.control.layers(baseLayers).addTo(map);
-    var lc = L.control.locate({ 
-            locateOptions: {
+    var lc = L.control.locate(
+        { 
+            locateOptions: 
+            {
                 enableHighAccuracy: true
             }
         }).addTo(map);
+    $('#showModal').click(() =>
+    {
+        $('#modal').css({'display': 'block'});
+    })
+    $('#modalClose').click(()=>
+    {
+        $('#modal').css({'display': 'none'});
+    })
     map.on('locationfound', onLocationFound);
     lc.start();
+
 });
 
 

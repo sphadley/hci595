@@ -13,11 +13,24 @@
     <link rel="stylesheet" href="js/leaflet-locate/L.Control.Locate.min.css" />
     <script src="js/leaflet-locate/L.Control.Locate.min.js" charset="utf-8"></script>
     <script src="js/turf.min.js" charset="utf-8"></script>
-
+    <script src="js/gardens.js"></script>
     <script src="js/index.js"> </script>
     </head>
 <body>
+    <div id="modal">
+        <div id="modalContent">
+            <div id="modalClose">&times;</div>
+            <h4>Food on First </h4>
+            <img src="gnome1.png"></img>
+            <div id="puzzleDiv">
+                <div id="questionDiv"></div>
+                <input id="answerInput" placeholder="Enter Answer Here"> </input>
+                <button class="btn-lg btn-success" id="setLocButton" >ok</button>
+            </div>
+        </div>
+    </div>
     <div id="map" ></div>
     <div id="output"></div>
+    <button id="showModal">Show Modal</button>
     </body>
 </html>
