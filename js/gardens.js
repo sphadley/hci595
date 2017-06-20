@@ -7,7 +7,7 @@ var gardens = [
         Puzzles:
         [
             {
-                Question: "what?",
+                Question: "wha",
                 Answer: "Blue Sky",
                 Badge: "Badge1-1.png"
             }
