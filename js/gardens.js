@@ -107,7 +107,7 @@ var gardens = [
             OptionB: "Walmart",
             OptionC: "Iowa State University",
             Badge: "Badge4-1.png"
-        };
+        },
         Gnome : {
             Name: "Gnome4",
             Image: "Gnome4.png"
@@ -126,7 +126,7 @@ var gardens = [
             OptionC: "Puppies",
             Answer: "OptionA",
             Badge: "Badge4-1.png"
-            };
+            },
         Gnome : {
             Name: "Gnome4",
             Image: "Gnome4.png"
