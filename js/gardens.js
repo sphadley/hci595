@@ -1,7 +1,7 @@
 var gardens = [
     {
         Name: "Ames Farmer's Market",
-        GardenInfo:"Contact Bob",
+        GardenInfo:"The mission of Ames Farmer's Market is to bring people together from the surrounding area to enjoy the bounty of the locally grown produce, delicious baked goods and beautifully hand crafted items. ",
         Latlng : [42.024843, -93.615325],
         Marker : 'm1.png',
         Puzzle:
@@ -21,7 +21,7 @@ var gardens = [
     },
     {
         Name: "Reiman Gardens",
-        GardenInfo:"Contact Jenny",
+        GardenInfo:"Reiman Gardens' mission is to educate, enchant, and inspire an appreciation of plants, butterflies, and the beauty of the natural world",
         Latlng : [42.010922, -93.638277],
         Marker : 'm2.png',
         Puzzle:
@@ -40,7 +40,7 @@ var gardens = [
     },
     {
         Name: "SUV Center",
-        GardenInfo:"Contact Tanya",
+        GardenInfo:"The SUV Center's mission is to provide a space for SUV families to grow, tend, and share produce from their community garden. ",
         Latlng : [42.042991, -93.644147],
         Marker : 'm3.png',
         Puzzles:
@@ -59,7 +59,7 @@ var gardens = [
     },
     {
         Name: "Wheatsfield Cooperative",
-        GardenInfo:"Contact Bob",
+        GardenInfo:"Wheatsfield Cooperative's Mission is to offer food, services and education to support the health of the environment and community",
         Latlng : [42.025398, -93.621531],
         Marker : 'm4.png',
         Puzzles:
@@ -78,7 +78,7 @@ var gardens = [
     },
     {
         Name: "Food at First",
-        GardenInfo:"Contact Bob",
+        GardenInfo:"Food at First's mission is to extend the growing season as well as providing more fresh food ",
         Latlng : [42.026999, -93.617169],
         Marker : 'm4.png',
         Puzzles:
@@ -97,7 +97,7 @@ var gardens = [
     },
     {
         Name: "The Farm",
-        GardenInfo:"Contact Bob",
+        GardenInfo:"The Farm's mission is to repurpose the thin strip of land along the railroad in Ames that was largely neglected and create a highly visible vegetable garden",
         Latlng : [42.034757, -93.627525],
         Marker : 'm4.png',
         Puzzles:
@@ -115,7 +115,7 @@ var gardens = [
     },
     {
         Name: "Beloit Garden",
-        GardenInfo:"Contact Bob",
+        GardenInfo:"Beloit Garden's mission is to feed the 45 (average) children that live on our campus 24/7.",
         Latlng : [42.035357, -93.626311],
         Marker : 'm4.png',
         Puzzles:
@@ -134,17 +134,17 @@ var gardens = [
     },
     {
         Name: "Blaze Pizza",
-        GardenInfo:"Contact Bob",
+        GardenInfo:"Blaze Pizza's mission is to become one of the nation’s hottest restaurant concepts, with fans lining up each day for its custom-built pizzas, freshly made salads, house made lemonades and signature s’more pies.  ",
         Latlng : [42.022363, -93.647317],
         Marker : 'm4.png',
         Puzzles:
         {
-                Question: "what?",
-                OptionA: "",
-                OptionB: "",
-                OptionC: "",
-                Answer: "Blue Sky",
-                Badge: "Badge4-1.png"
+            Question: "Blaze Pizza offers the option of ___ crust.",
+            OptionA: "Chocolate",
+            OptionB: "Gluten-free",
+            OptionC: "Mint",
+            Answer: "OptionB",
+            Badge: "Badge4-1.png"
             },
         Gnome : {
             Name: "Gnome4",
@@ -153,17 +153,18 @@ var gardens = [
     },
     {
         Name: "The Cafe",
-        GardenInfo:"Contact Bob",
+        GardenInfo:"The Cafe's mission is to interact with and buy directly from the people who grow produce -- local farmers, purveyors, and the community. For more information please call 5152920100. ",
         Latlng : [42.048824, -93.643675],
         Marker : 'm4.png',
         Puzzles:
-        [
-            {
-                Question: "what?",
-                Answer: "Blue Sky",
-                Badge: "Badge4-1.png"
-            }
-        ],
+        {
+            Question: "The Cafe uses ___ produce",
+            OptionA: "National",
+            OptionB: "International",
+            OptionC: "Local",
+            Answer: "OptionC"
+            Badge: "Badge4-1.png"
+            },
         Gnome : {
             Name: "Gnome4",
             Image: "Gnome4.png"
@@ -171,17 +172,18 @@ var gardens = [
     },
     {
         Name: "Ames Library",
-        GardenInfo:"Contact Bob",
+        GardenInfo:"Ames Library's mission is to provide library services to the Ames Community members and surrounding neighbors and to offer children and teens a place to play games, read a book or flip through a favorite magazine, and hang with friends. Call 5152395646 for more information.",
         Latlng : [42.026081, -93.612793],
         Marker : 'm4.png',
         Puzzles:
-        [
-            {
-                Question: "what?",
-                Answer: "Blue Sky",
-                Badge: "Badge4-1.png"
-            }
-        ],
+        {
+            Question: "Ames Public Library has over ___ books about gardens",
+            OptionA: "2,200",
+            OptionB: "5,500",
+            OptionC: "3,300",
+            Answer: "OptionA",
+            Badge: "Badge4-1.png"
+        },
         Gnome : {
             Name: "Gnome4",
             Image: "Gnome4.png"
