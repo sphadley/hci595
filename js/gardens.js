@@ -1,9 +1,9 @@
 var gardens = [
     {
         Name: "Ames Farmer's Market",
-        GardenInfo:"The mission of Ames Farmer's Market is to bring people together from the surrounding area to enjoy the bounty of the locally grown produce, delicious baked goods and beautifully hand crafted items. If you would like more information, please visit amesmainstreetfarmersmarket.com or call 5155200702. ",
-        Latlng : [42.024843, -93.615325],
-        Marker : 'm1.png',
+        GardenInfo: "The mission of Ames Farmer's Market is to bring people together from the surrounding area to enjoy the bounty of the locally grown produce, delicious baked goods and beautifully hand crafted items. If you would like more information, please visit amesmainstreetfarmersmarket.com or call 5155200702. ",
+        Latlng: [42.024843, -93.615325],
+        Marker: 'm1.png',
         Puzzle:
         {
             Question: "Ames Farmers Market is open from ___ to ___",
@@ -11,8 +11,7 @@ var gardens = [
             [
                 "May to October",
                 "June to July",
-                "June to August",
-
+                "June to August"
             ],
             CorrectAnswer: 0,
             Badge: "badge1.png"
@@ -25,9 +24,9 @@ var gardens = [
     },
     {
         Name: "Reiman Gardens",
-        GardenInfo:"Reiman Gardens' mission is to educate, enchant, and inspire an appreciation of plants, butterflies, and the beauty of the natural world. If you would like more information, please visit reimangardens.com or call 5152942710.",
-        Latlng : [42.010922, -93.638277],
-        Marker : 'm2.png',
+        GardenInfo: "Reiman Gardens' mission is to educate, enchant, and inspire an appreciation of plants, butterflies, and the beauty of the natural world. If you would like more information, please visit reimangardens.com or call 5152942710.",
+        Latlng: [42.010922, -93.638277],
+        Marker: 'm2.png',
         Puzzle:
         {
             Question: "The 2017 theme for Reiman Gardens is ___.",
@@ -35,9 +34,9 @@ var gardens = [
             [
                 "Earth",
                 "Water",
-                "Fire",
+                "Fire"
             ],
-            CorrectAnswer: 1, 
+            CorrectAnswer: 1,
             Badge: "badge2.png"
         },
         Gnome : {
@@ -57,7 +56,7 @@ var gardens = [
             [
                 "Super&nbsp;Ultra&nbsp;Violets",
                 "Schilletter&nbsp;and&nbsp;University&nbsp;Village",
-                "Sport&nbsp;Utility&nbsp;Vehicle",
+                "Sport&nbsp;Utility&nbsp;Vehicle"
             ],
             CorrectAnswer: 1,
             Badge: "badge1.png"
@@ -79,7 +78,7 @@ var gardens = [
             [
                 "114",
                 "50",
-                "76",
+                "76"
             ],
             CorrectAnswer: 0,
             Badge: "badge2.png"
@@ -101,7 +100,7 @@ var gardens = [
             [
                 "2nd grade",
                 "5th grade",
-                "9th grade",
+                "9th grade"
             ],
             CorrectAnswer: 1,
             Badge: "badge1.png"
@@ -123,7 +122,7 @@ var gardens = [
             [
                 "The railroad",
                 "Walmart",
-                "Iowa State University",
+                "Iowa State University"
             ],
             CorrectAnswer: 0,
             Badge: "badge2.png"
@@ -145,7 +144,7 @@ var gardens = [
             [
                 "Beloit's kitchen and Bethesda Food Pantry",
                 "McDonald's",
-                "Puppies",
+                "Puppies"
             ],
             CorrectAnswer: 0,
             Badge: "badge1.png"
@@ -167,7 +166,7 @@ var gardens = [
             [
                 "Chocolate",
                 "Gluten-free",
-                "Mint",
+                "Mint"
             ],
             CorrectAnswer: 1,
             Badge: "badge2.png"
@@ -185,11 +184,11 @@ var gardens = [
         Puzzle:
         {
             Question: "The Cafe uses ___ produce",
-            Answers: 
+            Answers:
             [
                 "National",
                 "International",
-                "Local",
+                "Local"
             ],
             CorrectAnswer: 2,
             Badge: "badge1.png"
@@ -207,18 +206,18 @@ var gardens = [
         Puzzle:
         {
             Question: "Ames Public Library has over ___ books about gardens",
-            Answers :
+            Answers:
             [
                 "2,200",
                 "5,500",
-                "3,300",
+                "3,300"
             ],
             CorrectAnswer: 0,
             Badge: "badge2.png"
         },
         Gnome : {
             Name: "Gnome4",
-            Image: "Gnome4.png"
+            Image: "gnome1.png"
         }
     }
 ]

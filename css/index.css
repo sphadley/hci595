@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-body{
-}
 #header {
     height: 5em;
 }
@@ -84,7 +82,7 @@ body{
 }
 #badgeDiv {
     position: relative;
-    top: 7em;
+    top: 10em;
     left: -5em;
     display: none;
 }

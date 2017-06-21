@@ -81,6 +81,7 @@ function onLocationFound(e)
                     var answer = garden.Puzzle.Answers[a];
                     var optionValue = a == garden.Puzzle.CorrectAnswer;
                     $('#badgeImage0').attr("src", garden.Puzzle.Badge);
+                    $('#gnomeImage').attr("src", garden.Gnome.Image);
                     optionString += '<div><input type="radio" name="puzzle" value="' + optionValue + '">' + answer +'</div>';
                 }
                 $('#optionDiv').html(optionString);
