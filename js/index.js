@@ -48,6 +48,7 @@ function onLocationFound(e)
             {
                 currentLocation = garden.Name;
                 $('#modalTitle').html("<h2>" + garden.Name + "</h2>");
+                $('#questionDiv').html(garden.Puzzle.Question);
                 $('#modal').css({'display': 'block'});
             }
             return;
