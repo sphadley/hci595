@@ -7,10 +7,14 @@ var gardens = [
         Puzzle:
         {
             Question: "Ames Farmers Market is open from ___ to ___",
-            OptionA: "May to October",
-            OptionB: "June to July",
-            OptionC: "June to August",
-            Answer: "OptionA",
+            Answers:
+            [
+                "May to October",
+                "June to July",
+                "June to August",
+
+            ],
+            CorrectAnswer: 0,
             Badge: "Badge1-1.png"
 
         },
@@ -27,10 +31,13 @@ var gardens = [
         Puzzle:
         {
             Question: "The 2017 theme for Reiman Gardens is ___.",
-            OptionA: "Earth",
-            OptionB: "Water",
-            OptionC: "Fire",
-            Answer: "OptionB",
+            Answers:
+            [
+                "Earth",
+                "Water",
+                "Fire",
+            ],
+            CorrectAnswer: 1, 
             Badge: "Badge2-1.png"
         },
         Gnome : {
@@ -43,13 +50,16 @@ var gardens = [
         GardenInfo:"The SUV Center's mission is to provide a space for SUV families to grow, tend, and share produce from their community garden. For more information, please call 5152945360. ",
         Latlng : [42.042991, -93.644147],
         Marker : 'm3.png',
-        Puzzles:
+        Puzzle:
         {
             Question: "SUV stands for...",
-            OptionA: "Super Ultra Violets",
-            OptionB: "Schilletter and University Village",
-            OptionC: "Sport Utility Vehicle",
-            Answer: "OptionB",
+            Answers:
+            [
+                "Super Ultra Violets",
+                "Schilletter and University Village",
+                "Sport Utility Vehicle",
+            ],
+            CorrectAnswer: 1,
             Badge: "Badge3-1.png"
         },
         Gnome : {
@@ -62,13 +72,16 @@ var gardens = [
         GardenInfo:"Wheatsfield Cooperative's Mission is to offer food, services and education to support the health of the environment and community. For more information, please visit wheatsfield.coop or call 5152324094.",
         Latlng : [42.025398, -93.621531],
         Marker : 'm4.png',
-        Puzzles:
+        Puzzle:
         {
             Question: "There are ___  local producers currently selling their products to Wheatsfield.",
-            OptionA: "114",
-            OptionB: "50",
-            OptionC: "76",
-            Answer: "OptionA",
+            Answers:
+            [
+                "114",
+                "50",
+                "76",
+            ],
+            CorrectAnswer: 0,
             Badge: "Badge4-1.png"
         },
         Gnome : {
@@ -81,13 +94,16 @@ var gardens = [
         GardenInfo:"Food at First's mission is to extend the growing season as well as providing more fresh food. For more information, please visit foodatfirst.wordpress.com or call 5153444357. ",
         Latlng : [42.026999, -93.617169],
         Marker : 'm4.png',
-        Puzzles:
+        Puzzle:
         {
             Question: "Anyone in ___ or older is welcome to sign up to volunteer at Food at First.",
-            OptionA: "2nd grade",
-            OptionB: "5th grade",
-            OptionC: "9th grade",
-            Answer: "OptionB",
+            Answers:
+            [
+                "2nd grade",
+                "5th grade",
+                "9th grade",
+            ],
+            CorrectAnswer: 1,
             Badge: "Badge4-1.png"
         },
         Gnome : {
@@ -100,12 +116,16 @@ var gardens = [
         GardenInfo:"The Farm's mission is to repurpose the thin strip of land along the railroad in Ames that was largely neglected and create a highly visible vegetable garden. For more information, please visit amescgc.com.",
         Latlng : [42.034757, -93.627525],
         Marker : 'm4.png',
-        Puzzles:
+        Puzzle:
         {
             Question: "The Farm is a garden that is beside ___.",
-            OptionA: "The railroad",
-            OptionB: "Walmart",
-            OptionC: "Iowa State University",
+            Answers :
+            [
+                "The railroad",
+                "Walmart",
+                "Iowa State University",
+            ],
+            CorrectAnswer: 0,
             Badge: "Badge4-1.png"
         },
         Gnome : {
@@ -118,15 +138,18 @@ var gardens = [
         GardenInfo:"Beloit Garden's mission is to feed the 45 (average) children that live on our campus 24/7. For more information, please visit amescgc.com or call 5152327262.",
         Latlng : [42.035357, -93.626311],
         Marker : 'm4.png',
-        Puzzles:
+        Puzzle:
         {
             Question: "The Beloit Garden gives produce to…",
-            OptionA: "Beloit's kitchen and Bethesda Food Pantry",
-            OptionB: "McDonald's",
-            OptionC: "Puppies",
-            Answer: "OptionA",
+            Answers :
+            [
+                "Beloit's kitchen and Bethesda Food Pantry",
+                "McDonald's",
+                "Puppies",
+            ],
+            CorrectAnswer: 0,
             Badge: "Badge4-1.png"
-            },
+        },
         Gnome : {
             Name: "Gnome4",
             Image: "Gnome4.png"
@@ -137,26 +160,18 @@ var gardens = [
         GardenInfo:"Blaze Pizza's mission is to become one of the nation’s hottest restaurant concepts, with fans lining up each day for its custom-built pizzas, freshly made salads, house made lemonades and signature s’more pies. For more information, please visit blazepizza.com or call 5159183473.  ",
         Latlng : [42.022363, -93.647317],
         Marker : 'm4.png',
-        Puzzles:
-<<<<<<< HEAD
+        Puzzle:
         {
             Question: "Blaze Pizza offers the option of ___ crust.",
-            OptionA: "Chocolate",
-            OptionB: "Gluten-free",
-            OptionC: "Mint",
-            Answer: "OptionB",
+            Answers :
+            [
+                "Chocolate",
+                "Gluten-free",
+                "Mint",
+            ],
+            CorrectAnswer: 1,
             Badge: "Badge4-1.png"
             },
-=======
-        {
-                Question: "what?",
-                OptionA: "",
-                OptionB: "",
-                OptionC: "",
-                Answer: "Blue Sky",
-                Badge: "Badge4-1.png"
-            },
->>>>>>> master
         Gnome : {
             Name: "Gnome4",
             Image: "Gnome4.png"
@@ -167,13 +182,16 @@ var gardens = [
         GardenInfo:"The Cafe's mission is to interact with and buy directly from the people who grow produce -- local farmers, purveyors, and the community. For more information please visit thecafeames.com or call 5152920100. ",
         Latlng : [42.048824, -93.643675],
         Marker : 'm4.png',
-        Puzzles:
+        Puzzle:
         {
             Question: "The Cafe uses ___ produce",
-            OptionA: "National",
-            OptionB: "International",
-            OptionC: "Local",
-            Answer: "OptionC"
+            Answers: 
+            [
+                "National",
+                "International",
+                "Local",
+            ],
+            CorrectAnswer: 2,
             Badge: "Badge4-1.png"
             },
         Gnome : {
@@ -186,13 +204,16 @@ var gardens = [
         GardenInfo:"Ames Library's mission is to provide library services to the Ames Community members and surrounding neighbors and to offer children and teens a place to play games, read a book or flip through a favorite magazine, and hang with friends. For more information, please visit amespubliclibrary.org or call 5152395646.",
         Latlng : [42.026081, -93.612793],
         Marker : 'm4.png',
-        Puzzles:
+        Puzzle:
         {
             Question: "Ames Public Library has over ___ books about gardens",
-            OptionA: "2,200",
-            OptionB: "5,500",
-            OptionC: "3,300",
-            Answer: "OptionA",
+            Answers :
+            [
+                "2,200",
+                "5,500",
+                "3,300",
+            ],
+            CorrectAnswer: 0,
             Badge: "Badge4-1.png"
         },
         Gnome : {

@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 body{
 }
+#header {
+    height: 5em;
+}
 #map {
-    height:100%;
+    height:calc(100% - 20em);
     width: 100%;
+}
+#badgeBarHeader {
+    box-shadow: 0px 5px 5px #888888;
+    margin: 0;
+    padding:0;
+}
+#badgeBarBody {
+    position: relative;
+    top: -1em;
+    height: 10em;
+    background-color: #cccccc;
+    margin: 0px;
+    overflow: hidden;
+    padding:0;
 }
 .popupImg {
     width: 200px;
@@ -58,9 +75,14 @@ body{
     cursor: pointer;
 }
 #gnomeImage {
-    float:left;
+    display: inline-block;
     height: 80%;
 }
 #puzzleDiv {
-    float: left;
+    vertical-align: top;
+    display:inline-block;
+}
+
+#badgeDiv {
+    display: none;
 }

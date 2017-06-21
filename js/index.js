@@ -49,6 +49,14 @@ function onLocationFound(e)
                 currentLocation = garden.Name;
                 $('#modalTitle').html("<h2>" + garden.Name + "</h2>");
                 $('#questionDiv').html(garden.Puzzle.Question);
+                optionString = "";
+                for(var a in garden.Puzzle.Answers)
+                {
+                    var answer = garden.Puzzle.Answers[a];
+                    var optionValue = a == garden.Puzzle.CorrectAnswer;
+                    optionString += '<label><input type="radio" name="puzzle" value="' + optionValue + '">' + answer +'</label>';
+                }
+                $('#optionDiv').html(optionString);
                 $('#modal').css({'display': 'block'});
             }
             return;
@@ -94,6 +102,18 @@ $("document").ready(() =>
     {
         $('#modal').css({'display': 'none'});
     })
+    $('#checkButton').click(()=>
+    {
+        var puzzleAnswer =$('input[name="puzzle"]:checked').val();
+        if(puzzleAnswer == 'true')
+        {
+            alert('Good Job!');
+        }
+        else
+        {
+            alert('Try again!');
+        }
+    });
     map.on('locationfound', onLocationFound);
     lc.start();
 
