@@ -54,7 +54,7 @@ function onLocationFound(e)
                 {
                     var answer = garden.Puzzle.Answers[a];
                     var optionValue = a == garden.Puzzle.CorrectAnswer;
-                    optionString += '<label><input type="radio" name="puzzle" value="' + optionValue + '">' + answer +'</label>';
+                    optionString += '<input type="radio" name="puzzle" value="' + optionValue + '">' + answer + '<br>';
                 }
                 $('#optionDiv').html(optionString);
                 $('#modal').css({'display': 'block'});

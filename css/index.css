@@ -86,3 +86,10 @@ body{
 #badgeDiv {
     display: none;
 }
+#optionDiv {
+    text-align: left;
+    width:30em;
+}
+.option {
+    text-align: left
+}

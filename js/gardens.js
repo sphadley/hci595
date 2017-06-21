@@ -55,9 +55,9 @@ var gardens = [
             Question: "SUV stands for...",
             Answers:
             [
-                "Super Ultra Violets",
-                "Schilletter and University Village",
-                "Sport Utility Vehicle",
+                "Super&nbsp;Ultra&nbsp;Violets",
+                "Schilletter&nbsp;and&nbsp;University&nbsp;Village",
+                "Sport&nbsp;Utility&nbsp;Vehicle",
             ],
             CorrectAnswer: 1,
             Badge: "Badge3-1.png"
