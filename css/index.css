@@ -57,3 +57,10 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
+#gnomeImage {
+    float:left;
+    height: 80%;
+}
+#puzzleDiv {
+    float: left;
+}

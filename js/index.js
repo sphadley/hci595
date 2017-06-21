@@ -1,5 +1,6 @@
 var map;
 target = [42.029549, -93.652079]
+var currentLocation = "";
 
 function getDistance(coord1, coord2)
 {
@@ -39,13 +40,20 @@ function onLocationFound(e)
 {
     for (g in gardens)
     {
-        var dist = getDistance([e.latlng.lat, e.latlng.lng], gardens[g].Latlng) 
+        var garden = gardens[g];
+        var dist = getDistance([e.latlng.lat, e.latlng.lng], gardens[g].Latlng);
         if(dist < 0.01)
         {
-            window.alert(gardens[g].Name);
-            break;
+            if(currentLocation != garden.Name)
+            {
+                currentLocation = garden.Name;
+                $('#modalTitle').html("<h2>" + garden.Name + "</h2>");
+                $('#modal').css({'display': 'block'});
+            }
+            return;
         }
     }
+    currentLocation = "";
 
 }
 

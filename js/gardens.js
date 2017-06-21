@@ -107,7 +107,7 @@ var gardens = [
             OptionB: "Walmart",
             OptionC: "Iowa State University",
             Badge: "Badge4-1.png"
-        };
+        },
         Gnome : {
             Name: "Gnome4",
             Image: "Gnome4.png"
@@ -126,7 +126,7 @@ var gardens = [
             OptionC: "Puppies",
             Answer: "OptionA",
             Badge: "Badge4-1.png"
-            };
+            },
         Gnome : {
             Name: "Gnome4",
             Image: "Gnome4.png"
@@ -138,6 +138,7 @@ var gardens = [
         Latlng : [42.022363, -93.647317],
         Marker : 'm4.png',
         Puzzles:
+<<<<<<< HEAD
         {
             Question: "Blaze Pizza offers the option of ___ crust.",
             OptionA: "Chocolate",
@@ -146,6 +147,16 @@ var gardens = [
             Answer: "OptionB",
             Badge: "Badge4-1.png"
             },
+=======
+        {
+                Question: "what?",
+                OptionA: "",
+                OptionB: "",
+                OptionC: "",
+                Answer: "Blue Sky",
+                Badge: "Badge4-1.png"
+            },
+>>>>>>> master
         Gnome : {
             Name: "Gnome4",
             Image: "Gnome4.png"
