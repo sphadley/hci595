@@ -48,7 +48,7 @@ var gardens = [
     {
         Name: "SUV Center",
         GardenInfo:"The SUV Center's mission is to provide a space for SUV families to grow, tend, and share produce from their community garden. For more information, please call 5152945360. ",
-        Latlng : [42.042991, -93.644147],
+        Latlng : [42.044653, -93.640029],
         Marker : 'm3.png',
         Puzzle:
         {
