@@ -11,7 +11,9 @@
     <script src="https://indicator.extension.iastate.edu/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="js/leaflet-locate/L.Control.Locate.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/leaflet-locate/L.Control.Locate.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/turf.min.js" charset="utf-8"></script>
     <script src="js/gardens.js"></script>
     <script src="js/index.js"> </script>
@@ -21,16 +23,20 @@
         <div id="modalContent">
             <div id="modalClose">&times;</div>
             <div id="modalTitle"></div>
-            <img id="gnomeImage" src="gnome1.png"></img>
-            <div id="puzzleDiv">
-                <div id="questionDiv"></div>
-                <div id="optionDiv"></div>
-                <button class="btn-lg btn-success" id="checkButton" >Check</button>
+            <div id="nonBadgeDiv">
+                <img id="gnomeImage" src="gnome1.png"></img>
+                <div id="puzzleDiv">
+                    <div id="questionDiv"></div>
+                    <div id="optionDiv"></div>
+                    <div>
+                        <button class="btn-lg btn-success" id="checkButton" >Check</button>
+                    </div>
+                </div>
             </div>
             <div id="badgeDiv">
-                <h2>Congratulations! Drag Badge into your badge bar to save!</h2>
+                <h4>Congratulations!<br>Drag Badge into your badge bar to save!</h4>
                 <div id="badgeBody">
-                    <img id="badgeImage" src="badge1.png" />
+                    <img id="badgeImage0" class="badgeImage" src="badge1.png" />
                 </div>
             </div>
         </div>
@@ -43,10 +49,8 @@
         <div id="badgeBarHeader">
         <h2>Badge Bar:</h2>
         </div>
-        <div id="badgeBarBody">
+        <div id="badgeBarBody" >
         </div>
     </div>
-    <div id="output"></div>
-    <button id="showModal">Show Modal</button>
     </body>
 </html>

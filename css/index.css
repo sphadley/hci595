@@ -5,7 +5,7 @@ body{
     height: 5em;
 }
 #map {
-    height:calc(100% - 20em);
+    height:calc(100% - 25em);
     width: 100%;
 }
 #badgeBarHeader {
@@ -40,7 +40,7 @@ body{
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 15em);
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
@@ -53,13 +53,9 @@ body{
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    height: 60%;
+    height:80%;
 }
 
-#modalContent input {
-    width: calc(100% - 7em);
-    height: 3em;
-}
 
 #modalClose {
     color: #aaaaaa;
@@ -75,21 +71,27 @@ body{
     cursor: pointer;
 }
 #gnomeImage {
-    display: inline-block;
-    height: 80%;
+    float:left;
+    height:20em;
 }
 #puzzleDiv {
+    align-content: left;
+    text-align: left;
     vertical-align: top;
-    display:inline-block;
 }
-
+#nonBadgeDiv {
+    display: block;
+}
 #badgeDiv {
+    position: relative;
+    top: 7em;
+    left: -5em;
     display: none;
 }
 #optionDiv {
+    align-content: left;
     text-align: left;
-    width:30em;
 }
-.option {
-    text-align: left
+.badgeImage {
+    height: 8em;
 }

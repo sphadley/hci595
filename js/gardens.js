@@ -15,12 +15,12 @@ var gardens = [
 
             ],
             CorrectAnswer: 0,
-            Badge: "Badge1-1.png"
+            Badge: "badge1.png"
 
         },
         Gnome : {
             Name: "Gnome1",
-            Image: "Gnome1.png"
+            Image: "gnome1.png"
         }
     },
     {
@@ -38,11 +38,11 @@ var gardens = [
                 "Fire",
             ],
             CorrectAnswer: 1, 
-            Badge: "Badge2-1.png"
+            Badge: "badge2.png"
         },
         Gnome : {
             Name: "Gnome2",
-            Image: "Gnome2.png"
+            Image: "gnome1.png"
         }
     },
     {
@@ -60,11 +60,11 @@ var gardens = [
                 "Sport&nbsp;Utility&nbsp;Vehicle",
             ],
             CorrectAnswer: 1,
-            Badge: "Badge3-1.png"
+            Badge: "badge1.png"
         },
         Gnome : {
             Name: "Gnome3",
-            Image: "Gnome3.png"
+            Image: "gnome1.png"
         }
     },
     {
@@ -82,11 +82,11 @@ var gardens = [
                 "76",
             ],
             CorrectAnswer: 0,
-            Badge: "Badge4-1.png"
+            Badge: "badge2.png"
         },
         Gnome : {
             Name: "Gnome4",
-            Image: "Gnome4.png"
+            Image: "gnome1.png"
         }
     },
     {
@@ -104,11 +104,11 @@ var gardens = [
                 "9th grade",
             ],
             CorrectAnswer: 1,
-            Badge: "Badge4-1.png"
+            Badge: "badge1.png"
         },
         Gnome : {
             Name: "Gnome4",
-            Image: "Gnome4.png"
+            Image: "gnome1.png"
         }
     },
     {
@@ -126,11 +126,11 @@ var gardens = [
                 "Iowa State University",
             ],
             CorrectAnswer: 0,
-            Badge: "Badge4-1.png"
+            Badge: "badge2.png"
         },
         Gnome : {
             Name: "Gnome4",
-            Image: "Gnome4.png"
+            Image: "gnome1.png"
         }
     },
     {
@@ -148,11 +148,11 @@ var gardens = [
                 "Puppies",
             ],
             CorrectAnswer: 0,
-            Badge: "Badge4-1.png"
+            Badge: "badge1.png"
         },
         Gnome : {
             Name: "Gnome4",
-            Image: "Gnome4.png"
+            Image: "gnome1.png"
         }
     },
     {
@@ -170,11 +170,11 @@ var gardens = [
                 "Mint",
             ],
             CorrectAnswer: 1,
-            Badge: "Badge4-1.png"
+            Badge: "badge2.png"
             },
         Gnome : {
             Name: "Gnome4",
-            Image: "Gnome4.png"
+            Image: "gnome1.png"
         }
     },
     {
@@ -192,11 +192,11 @@ var gardens = [
                 "Local",
             ],
             CorrectAnswer: 2,
-            Badge: "Badge4-1.png"
+            Badge: "badge1.png"
             },
         Gnome : {
             Name: "Gnome4",
-            Image: "Gnome4.png"
+            Image: "gnome1.png"
         }
     },
     {
@@ -214,7 +214,7 @@ var gardens = [
                 "3,300",
             ],
             CorrectAnswer: 0,
-            Badge: "Badge4-1.png"
+            Badge: "badge2.png"
         },
         Gnome : {
             Name: "Gnome4",

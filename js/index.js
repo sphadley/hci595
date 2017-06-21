@@ -1,6 +1,32 @@
 var map;
 target = [42.029549, -93.652079]
 var currentLocation = "";
+var badgeCount =1; 
+var badges = [];
+
+function onDragStart(event) 
+{
+    event.stopPropagation();
+    event.dataTransfer.setData("text/html", event.target.id);
+}
+
+function onDragOver(event) 
+{
+    event.preventDefault();
+}  
+
+function onDrop(event) 
+{
+    event.preventDefault();
+    var data=event.dataTransfer.getData("text/html");
+    var nodeCopy = document.getElementById(data).cloneNode(true);
+    nodeCopy.id = "badgeImage" + badgeCount; /* We cannot use the same ID */
+    event.target.appendChild(nodeCopy);
+    var imageSource = $('#badgeImage0').attr('src');
+    badges.push(imageSource);
+    localStorage.setItem("badges", JSON.stringify(badges));
+    badgeCount++;
+}
 
 function getDistance(coord1, coord2)
 {
@@ -47,14 +73,15 @@ function onLocationFound(e)
             if(currentLocation != garden.Name)
             {
                 currentLocation = garden.Name;
-                $('#modalTitle').html("<h2>" + garden.Name + "</h2>");
-                $('#questionDiv').html(garden.Puzzle.Question);
+                $('#modalTitle').html('<h2>' + garden.Name + '</h2>');
+                $('#questionDiv').html('<h3>' + garden.Puzzle.Question +'</h3>');
                 optionString = "";
                 for(var a in garden.Puzzle.Answers)
                 {
                     var answer = garden.Puzzle.Answers[a];
                     var optionValue = a == garden.Puzzle.CorrectAnswer;
-                    optionString += '<input type="radio" name="puzzle" value="' + optionValue + '">' + answer + '<br>';
+                    $('#badgeImage0').attr("src", garden.Puzzle.Badge);
+                    optionString += '<div><input type="radio" name="puzzle" value="' + optionValue + '">' + answer +'</div>';
                 }
                 $('#optionDiv').html(optionString);
                 $('#modal').css({'display': 'block'});
@@ -94,26 +121,44 @@ $("document").ready(() =>
                 enableHighAccuracy: true
             }
         }).addTo(map);
-    $('#showModal').click(() =>
-    {
-        $('#modal').css({'display': 'block'});
-    })
     $('#modalClose').click(()=>
     {
         $('#modal').css({'display': 'none'});
+        $('#badgeDiv').css({'display': 'none'});
+
     })
     $('#checkButton').click(()=>
     {
         var puzzleAnswer =$('input[name="puzzle"]:checked').val();
         if(puzzleAnswer == 'true')
         {
-            alert('Good Job!');
+            $('#badgeDiv').css({'display': 'block'});
         }
         else
         {
-            alert('Try again!');
+            $('#badgeDiv').css({'display': 'none'});
         }
     });
+
+    var badgeImg = document.getElementById('badgeImage0');
+    var badgeBar = document.getElementById('badgeBarBody');
+    badgeImg.addEventListener('dragstart', onDragStart, false);
+    badgeBar.addEventListener('dragover', onDragOver, false);
+    badgeBar.addEventListener('drop', onDrop, false);
+
+    storedBadges = JSON.parse(localStorage.getItem("badges"));
+    if(storedBadges != null)
+    {
+        badges = storedBadges;
+        for(b in badges)
+        {
+            var badge = badges[b];
+            $('#badgeBarBody').append('<img class="badgeImage" id="badgeImage' + badgeCount + '" src="' + badge +'"/>');
+            badgeCount++;
+        }
+    }
+
+
     map.on('locationfound', onLocationFound);
     lc.start();
 
