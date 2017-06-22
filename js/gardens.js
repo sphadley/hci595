@@ -135,7 +135,7 @@ var gardens = [
     {
         Name: "Beloit Garden",
         GardenInfo:"Beloit Garden's mission is to feed the 45 (average) children that live on our campus 24/7. For more information, please visit amescgc.com or call 5152327262.",
-        Latlng : [42.035357, -93.626311],
+        Latlng : [42.037397, -93.628338],
         Marker : 'm4.png',
         Puzzle:
         {
