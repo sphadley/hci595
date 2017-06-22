@@ -75,16 +75,18 @@ function onLocationFound(e)
                 currentLocation = garden.Name;
                 $('#modalTitle').html('<h2>' + garden.Name + '</h2>');
                 $('#questionDiv').html('<h3>' + garden.Puzzle.Question +'</h3>');
+                $('#badgeImage0').attr("src", garden.Puzzle.Badge);
+                $('#gnomeImage').attr("src", garden.Gnome.Image);
                 optionString = "";
                 for(var a in garden.Puzzle.Answers)
                 {
                     var answer = garden.Puzzle.Answers[a];
                     var optionValue = a == garden.Puzzle.CorrectAnswer;
-                    $('#badgeImage0').attr("src", garden.Puzzle.Badge);
-                    $('#gnomeImage').attr("src", garden.Gnome.Image);
-                    optionString += '<div><input type="radio" name="puzzle" value="' + optionValue + '">' + answer +'</div>';
+                    optionString += '<div class="radioDiv"><input type="radio" name="puzzle" value="' + optionValue + '">' + answer +'</div>';
                 }
                 $('#optionDiv').html(optionString);
+                $('#nonBadgeDiv').css({'display':'block'});
+                $('#infoDiv').html('<h4>' + garden.GardenInfo +'</h4>');
                 $('#modal').css({'display': 'block'});
             }
             return;
@@ -134,6 +136,7 @@ $("document").ready(() =>
         if(puzzleAnswer == 'true')
         {
             $('#badgeDiv').css({'display': 'block'});
+            $('#nonBadgeDiv').css({'display':'none'});
         }
         else
         {

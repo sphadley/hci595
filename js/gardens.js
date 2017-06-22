@@ -19,7 +19,7 @@ var gardens = [
         },
         Gnome : {
             Name: "Gnome1",
-            Image: "gnome1.png"
+            Image: "gnome1boy.png"
         }
     },
     {
@@ -41,7 +41,7 @@ var gardens = [
         },
         Gnome : {
             Name: "Gnome2",
-            Image: "gnome1.png"
+            Image: "gnome1man.png"
         }
     },
     {
@@ -63,7 +63,7 @@ var gardens = [
         },
         Gnome : {
             Name: "Gnome3",
-            Image: "gnome1.png"
+            Image: "gnome1woman.png"
         }
     },
     {
@@ -85,7 +85,7 @@ var gardens = [
         },
         Gnome : {
             Name: "Gnome4",
-            Image: "gnome1.png"
+            Image: "gnome2boy.png"
         }
     },
     {
@@ -107,7 +107,7 @@ var gardens = [
         },
         Gnome : {
             Name: "Gnome4",
-            Image: "gnome1.png"
+            Image: "gnome2man.png"
         }
     },
     {
@@ -129,7 +129,7 @@ var gardens = [
         },
         Gnome : {
             Name: "Gnome4",
-            Image: "gnome1.png"
+            Image: "gnome2woman.png"
         }
     },
     {
@@ -151,7 +151,7 @@ var gardens = [
         },
         Gnome : {
             Name: "Gnome4",
-            Image: "gnome1.png"
+            Image: "gnome3man.png"
         }
     },
     {
@@ -173,7 +173,7 @@ var gardens = [
             },
         Gnome : {
             Name: "Gnome4",
-            Image: "gnome1.png"
+            Image: "gnome3woman.png"
         }
     },
     {
@@ -195,7 +195,7 @@ var gardens = [
             },
         Gnome : {
             Name: "Gnome4",
-            Image: "gnome1.png"
+            Image: "gnome4boy.png"
         }
     },
     {
@@ -217,7 +217,7 @@ var gardens = [
         },
         Gnome : {
             Name: "Gnome4",
-            Image: "gnome1.png"
+            Image: "gnome4man.png"
         }
     }
 ]
