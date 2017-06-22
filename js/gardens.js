@@ -37,7 +37,7 @@ var gardens = [
                 "Fire"
             ],
             CorrectAnswer: 1,
-            Badge: "badge2.png"
+            Badge: "corn.png"
         },
         Gnome : {
             Name: "Gnome2",
@@ -59,7 +59,7 @@ var gardens = [
                 "Sport&nbsp;Utility&nbsp;Vehicle"
             ],
             CorrectAnswer: 1,
-            Badge: "badge1.png"
+            Badge: "pumpkin.png"
         },
         Gnome : {
             Name: "Gnome3",
@@ -81,7 +81,7 @@ var gardens = [
                 "76"
             ],
             CorrectAnswer: 0,
-            Badge: "badge2.png"
+            Badge: "strawberry.png"
         },
         Gnome : {
             Name: "Gnome4",
@@ -103,7 +103,7 @@ var gardens = [
                 "9th grade"
             ],
             CorrectAnswer: 1,
-            Badge: "badge1.png"
+            Badge: "carrot.png"
         },
         Gnome : {
             Name: "Gnome4",
@@ -125,7 +125,7 @@ var gardens = [
                 "Iowa State University"
             ],
             CorrectAnswer: 0,
-            Badge: "badge2.png"
+            Badge: "pepper.png"
         },
         Gnome : {
             Name: "Gnome4",
@@ -169,7 +169,7 @@ var gardens = [
                 "Mint"
             ],
             CorrectAnswer: 1,
-            Badge: "badge2.png"
+            Badge: "eggplant.png"
             },
         Gnome : {
             Name: "Gnome4",
@@ -191,7 +191,7 @@ var gardens = [
                 "Local"
             ],
             CorrectAnswer: 2,
-            Badge: "badge1.png"
+            Badge: "broccoli.png"
             },
         Gnome : {
             Name: "Gnome4",
