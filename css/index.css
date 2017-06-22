@@ -20,6 +20,7 @@
     padding:0;
 }
 #badgeBarBody {
+    display: block;
     position: relative;
     top: -1em;
     height: 10em;
@@ -27,6 +28,7 @@
     margin: 0px;
     overflow: hidden;
     padding:0;
+    clear: both;
 }
 .popupImg {
     width: 200px;
@@ -102,4 +104,15 @@
 }
 .badgeImage {
     height: 8em;
+}
+
+#badgeBarHeaderTitle {
+    float: left;
+}
+
+#clearButtonDiv {
+    float: right;
+}
+#clearButton{
+    margin-top: .5em;
 }

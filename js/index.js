@@ -144,6 +144,13 @@ $("document").ready(() =>
         }
     });
 
+    $('#clearButton').click(()=>
+    {
+        $('#badgeBarBody').empty();
+        badges = [];
+        localStorage.setItem("badges", null);
+    });
+
     var badgeImg = document.getElementById('badgeImage0');
     var badgeBar = document.getElementById('badgeBarBody');
     badgeImg.addEventListener('dragstart', onDragStart, false);

@@ -14,7 +14,7 @@ var gardens = [
                 "June to August"
             ],
             CorrectAnswer: 0,
-            Badge: "badge1.png"
+            Badge: "apple.png"
 
         },
         Gnome : {
